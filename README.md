@@ -2,7 +2,6 @@
 A script that does everything instead of you to install the things for rplidar mapping
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Before you install the mapping softwares you either have to install Arch or Ubuntu 20.04 on your RaspberryPi
-Arch Install: https://archlinuxarm.org/platforms/armv8/broadcom/raspberry-pi-4
 Ubuntu Install:
  - Download the RaspberryPi Imager (or install with your package manager on linux): https://www.raspberrypi.com/software/
   ![raspbiimager](https://github.com/Rajmi105/ros-rplidar-mapping/assets/44523110/e7bb988b-1e84-4f92-a15d-7e594a7cce0e)
