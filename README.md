@@ -9,6 +9,7 @@ Ubuntu Install:
  - Select your RaspberryPi Device with the 'Choose Device' button
  - Click on 'Choose OS' -> Scroll down to 'Other general-purpose OS' -> Select Ubuntu -> Scroll down and select Ubuntu Server 20.04.5 LTS (64 or 32 bit depending on your RaspberryPi)
  - Select your SD card with the 'Choose Storage' button and write the image
+ - After the writing is done, put the SD card into your RaspberryPi
  - After you boot into the system (username: ubuntu, password: ubuntu) you will need to change the password
  - After the password is changed type in: ```sudo apt install ubuntu-desktop```
  - After the installation is done just reboot the device ```sudo shutdown -r now```
