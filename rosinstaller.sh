@@ -6,7 +6,7 @@ sudo apt install curl
 curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 sudo apt update
 sudo apt install ros-noetic-desktop-full
-echo "source /opt/ros/noetic/setup.bash" > .bashrc
+echo "source /opt/ros/noetic/setup.bash" >> .bashrc
 source /opt/ros/noetic/setup.bash
 echo "What brand of RPLidar Sensor you have?"
 echo "1: Slamtec	2: RoboPeak"
