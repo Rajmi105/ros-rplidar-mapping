@@ -17,6 +17,7 @@ Ubuntu Install:
  - The installer will help you install everything needed for the scan
 ## After installing ROS
 Depending on what lidar sensor you have:
+ - Before starting the scanner: ```sudo chmod 666 /dev/ttyUSB*```
  - (A1/A2)
  - ```roslaunch rplidar.launch```
  - (A3)
