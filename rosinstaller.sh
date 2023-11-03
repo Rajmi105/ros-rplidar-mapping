@@ -9,7 +9,7 @@ sudo apt install ros-noetic-desktop-full
 echo "source /opt/ros/noetic/setup.bash" > .bashrc
 source /opt/ros/noetic/setup.bash
 echo "What brand of RPLidar Sensor you have?"
-echo "1: Slamtec	2: Ro#!/bin/bashboPeak"
+echo "1: Slamtec	2: RoboPeak"
 read lidarselect
 if  [$lidarselect -eq 1]
 then
