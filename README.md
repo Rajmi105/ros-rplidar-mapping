@@ -16,11 +16,11 @@ Ubuntu Install:
  - Clone this repo and run rosinstaller.sh
  - The installer will help you install everything needed for the scan
 ## After installing ROS
-```Depending on what lidar sensor you have:
-          (A1/A2)
-$ roslaunch rplidar.launch
-            (A3)
-$ roslaunch rplidar_a3.launch
+Depending on what lidar sensor you have:
+ - (A1/A2)
+```roslaunch rplidar.launch```
+ - (A3)
+```roslaunch rplidar_a3.launch```
 After this you will have to open a new terminal and type
-$ source catkin_ws/devel/setup.bash
-$ roslaunch hector_slam_launch tutorial.launch
+```source catkin_ws/devel/setup.bash```
+```roslaunch hector_slam_launch tutorial.launch```
