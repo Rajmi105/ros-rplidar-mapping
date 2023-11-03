@@ -17,10 +17,10 @@ then
 	cd catkin_ws/src
 	git clone https://github.com/Slamtec/rplidar_ros.git
 	git clone https://github.com/tu-darmstadt-ros-pkg/hector_slam.git
-	sed -i '<arg name="base_frame" default="base_footprint"/>/c\<arg name="base_frame" default="base_link"/>' hector_slam/hector_mapping/launch/mapping_default.launch
-	sed -i '<arg name="odom_frame" default="nav"/>/c\<arg name="odom_frame" default="base_link"/>' hector_slam/hector_mapping/launch/mapping_default.launch
-	sed -i '<!--<node pkg="tf" type="static_transform_publisher" name="map_nav_broadcaster" args="0 0 0 0 0 0 map nav 100"/>-->/c\<node pkg="tf" type="static_transform_publisher" name="base_to_laser_broadcaster" args="0 0 0 0 0 0 base_link laser 100"/>' hector_slam/hector_mapping/launch/mapping_default.launch
-	sed -i '<param name="/use_sim_time" value="true"/>/c\<param name="/use_sim_time" value="false"/>' hector_slam/hector_slam_launch/launch/tutorial.launch
+	sed -i 's/<arg name="base_frame" default="base_footprint"/>/<arg name="base_frame" default="base_link"/>/g' hector_slam/hector_mapping/launch/mapping_default.launch
+	sed -i 's/<arg name="odom_frame" default="nav"/>/<arg name="odom_frame" default="base_link"/>/g' hector_slam/hector_mapping/launch/mapping_default.launch
+	sed -i 's/<!--<node pkg="tf" type="static_transform_publisher" name="map_nav_broadcaster" args="0 0 0 0 0 0 map nav 100"/>-->/<node pkg="tf" type="static_transform_publisher" name="base_to_laser_broadcaster" args="0 0 0 0 0 0 base_link laser 100"/>/g' hector_slam/hector_mapping/launch/mapping_default.launch
+	sed -i 's/<param name="/use_sim_time" value="true"/>/<param name="/use_sim_time" value="false"/>/g' hector_slam/hector_slam_launch/launch/tutorial.launch
 	cd ..
 	catkin_make
 	source devel/setup.bash
@@ -29,10 +29,10 @@ else
 	cd catkin_ws/src
 	git clone https://github.com/robopeak/rplidar_ros.git
 	git clone https://github.com/tu-darmstadt-ros-pkg/hector_slam.git
-	sed -i '<arg name="base_frame" default="base_footprint"/>/c\<arg name="base_frame" default="base_link"/>' hector_slam/hector_mapping/launch/mapping_default.launch
-	sed -i '<arg name="odom_frame" default="nav"/>/c\<arg name="odom_frame" default="base_link"/>' hector_slam/hector_mapping/launch/mapping_default.launch
-	sed -i '<!--<node pkg="tf" type="static_transform_publisher" name="map_nav_broadcaster" args="0 0 0 0 0 0 map nav 100"/>-->/c\<node pkg="tf" type="static_transform_publisher" name="base_to_laser_broadcaster" args="0 0 0 0 0 0 base_link laser 100"/>' hector_slam/hector_mapping/launch/mapping_default.launch
-	sed -i '<param name="/use_sim_time" value="true"/>/c\<param name="/use_sim_time" value="false"/>' hector_slam/hector_slam_launch/launch/tutorial.launch
+	sed -i 's/<arg name="base_frame" default="base_footprint"/>/<arg name="base_frame" default="base_link"/>/g' hector_slam/hector_mapping/launch/mapping_default.launch
+	sed -i 's/<arg name="odom_frame" default="nav"/>/<arg name="odom_frame" default="base_link"/>/g' hector_slam/hector_mapping/launch/mapping_default.launch
+	sed -i 's/<!--<node pkg="tf" type="static_transform_publisher" name="map_nav_broadcaster" args="0 0 0 0 0 0 map nav 100"/>-->/<node pkg="tf" type="static_transform_publisher" name="base_to_laser_broadcaster" args="0 0 0 0 0 0 base_link laser 100"/>/g' hector_slam/hector_mapping/launch/mapping_default.launch
+	sed -i 's/<param name="/use_sim_time" value="true"/>/<param name="/use_sim_time" value="false"/>/g' hector_slam/hector_slam_launch/launch/tutorial.launch
 	cd ..
 	catkin_make
 	source devel/setup.bash
