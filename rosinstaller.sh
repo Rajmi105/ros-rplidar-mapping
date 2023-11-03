@@ -18,7 +18,7 @@ else
 	cd paru
 	makepkg -si
 	cd ..
-	paru -S ros-noetic-desktop-full
+	paru -S ros-noetic-desktop
 	echo "source /opt/ros/noetic/setup.bash" > .bashrc
 	source /opt/ros/noetic/setup.bash
 fi
