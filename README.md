@@ -19,9 +19,9 @@ Ubuntu Install:
 Depending on what lidar sensor you have:
  - Before starting the scanner: ```sudo chmod 666 /dev/ttyUSB*```
  - (A1/A2)
- - ```roslaunch rplidar.launch```
+ - ```roslaunch rplidar_roas rplidar.launch```
  - (A3)
- - ```roslaunch rplidar_a3.launch```
+ - ```roslaunch rplidar_ros rplidar_a3.launch```
 ## After starting rplidar scanner
 Open a new terminal and type:
  - ```source catkin_ws/devel/setup.bash```
