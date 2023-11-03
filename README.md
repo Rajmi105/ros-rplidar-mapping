@@ -21,6 +21,6 @@ Depending on what lidar sensor you have:
  - ```roslaunch rplidar.launch```
  - (A3)
  - ```roslaunch rplidar_a3.launch```
-After this you will have to open a new terminal and type:
+ - After this you will have to open a new terminal and type:
  - ```source catkin_ws/devel/setup.bash```
  - ```roslaunch hector_slam_launch tutorial.launch```
