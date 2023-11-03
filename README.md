@@ -13,7 +13,7 @@ Ubuntu Install:
  - After the password is changed type in: ```sudo apt install ubuntu-desktop```
  - After the installation is done just reboot the device ```sudo shutdown -r now```
 ## After installing linux
- - Clone this repo
+ - Clone this repo ```git clone https://github.com/Rajmi105/ros-rplidar-mapping.git```
  - Copy the rosinstall.sh file into your home folder ```cp ros-rplidar-mapping/rosinstall.sh $HOME```
  - The installer will help you install everything needed for the scan
 ## After installing ROS
