@@ -39,3 +39,4 @@ else
 fi
 clear
 echo "ROS install done"
+echo "Continue by following the documentation"
