@@ -28,3 +28,11 @@ Depending on what lidar sensor you have:
 Open a new terminal and type:
  - ```source catkin_ws/devel/setup.bash```
  - ```roslaunch hector_slam_launch tutorial.launch```
+## If you rebooted your raspberry after the installation script:
+ - (A1/A2)
+ - ```roslaunch rplidar_ros rplidar.launch```
+ - (A3)
+ - ```roslaunch rplidar_ros rplidar_a3.launch```
+ - Open a new terminal session
+ - ```source catkin_ws/devel/setup.bash```
+ - ```roslaunch hector_slam_launch tutorial.launch```
